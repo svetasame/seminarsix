@@ -1,0 +1,15 @@
+D:\обучение Гик Брейнс\ДЗ\seminarsix\classwork\obj\Debug\net6.0\classwork.csproj.AssemblyReference.cache
+D:\обучение Гик Брейнс\ДЗ\seminarsix\classwork\obj\Debug\net6.0\classwork.GeneratedMSBuildEditorConfig.editorconfig
+D:\обучение Гик Брейнс\ДЗ\seminarsix\classwork\obj\Debug\net6.0\classwork.AssemblyInfoInputs.cache
+D:\обучение Гик Брейнс\ДЗ\seminarsix\classwork\obj\Debug\net6.0\classwork.AssemblyInfo.cs
+D:\обучение Гик Брейнс\ДЗ\seminarsix\classwork\obj\Debug\net6.0\classwork.csproj.CoreCompileInputs.cache
+D:\обучение Гик Брейнс\ДЗ\seminarsix\classwork\bin\Debug\net6.0\classwork.exe
+D:\обучение Гик Брейнс\ДЗ\seminarsix\classwork\bin\Debug\net6.0\classwork.deps.json
+D:\обучение Гик Брейнс\ДЗ\seminarsix\classwork\bin\Debug\net6.0\classwork.runtimeconfig.json
+D:\обучение Гик Брейнс\ДЗ\seminarsix\classwork\bin\Debug\net6.0\classwork.dll
+D:\обучение Гик Брейнс\ДЗ\seminarsix\classwork\bin\Debug\net6.0\classwork.pdb
+D:\обучение Гик Брейнс\ДЗ\seminarsix\classwork\obj\Debug\net6.0\classwork.dll
+D:\обучение Гик Брейнс\ДЗ\seminarsix\classwork\obj\Debug\net6.0\refint\classwork.dll
+D:\обучение Гик Брейнс\ДЗ\seminarsix\classwork\obj\Debug\net6.0\classwork.pdb
+D:\обучение Гик Брейнс\ДЗ\seminarsix\classwork\obj\Debug\net6.0\classwork.genruntimeconfig.cache
+D:\обучение Гик Брейнс\ДЗ\seminarsix\classwork\obj\Debug\net6.0\ref\classwork.dll
