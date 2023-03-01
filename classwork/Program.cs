@@ -33,7 +33,6 @@ int [] ReverseArray (int [] array)
   return array;
 }
 
-
 static int Prompt(string message)
 {
 System.Console.WriteLine(message);
@@ -43,11 +42,7 @@ return result;
 
 void CheckTriangle (int a, int b, int c)
 {
-  if (a == b+c)
-  Console.WriteLine($"ОШИБКА.Треугольник с со сторонами {a}, {b} и {c} не сущесвует");
-  else if (b == a+c)
-  Console.WriteLine($"ОШИБКА.Треугольник с со сторонами {a}, {b} и {c} не сущесвует");
-  else if (c == a+b)
+  if (a == b+c || b == a+c || c == a+b )
   Console.WriteLine($"ОШИБКА.Треугольник с со сторонами {a}, {b} и {c} не сущесвует");
   else
   Console.WriteLine($"Треугольник с со сторонами {a}, {b} и {c} может существовать");
