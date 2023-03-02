@@ -1,11 +1,11 @@
-﻿int [] PromptArray(string message)
+﻿double [] PromptArray(string message)
 {
 System.Console.WriteLine(message);
-int[] arraydigits = Array.ConvertAll(Console.ReadLine().Split(','), digit => {return System.Convert.ToInt32 (digit);});
+double [] arraydigits = Array.ConvertAll(Console.ReadLine().Split(','), digit => {return System.Convert.ToDouble (digit);});
 return arraydigits;
 }
 
-void CheckArray (int [] array)
+void CheckArray (double [] array)
 {
   int count = 0;
   for (int i = 0; i < array.Length; i++)
@@ -24,26 +24,22 @@ void PrintArray (int [] array)
 
 
 // задача 41 пользователь ввел массив чисел, нужно посчитать сколько было введено чисел больш 0
-// int [] array = PromptArray("введите массив");
+// double [] array = PromptArray("введите массив");
 // CheckArray (array);
 
-//программа которая найдет точку пересечения 2 прямых заданных уравнениями 
-// y=k1*x+b1, y = k2*x+b2
-void Linec
+// задача 43 программа которая найдет точку пересечения 2 прямых заданных уравнениями 
 
-
-
-int [] array = PromptArray("введите b1,k1,b2,k2:");
-PrintArray (array);
-
-
-int n = 0;
-void Count (ref int Count)
+void LineCross (double  [] array)
 {
-  System.Console.WriteLine(n);
-  Count++;
+double b1 = array [0];
+double k1 = array [1];
+double b2 = array [2];
+double k2 = array [3];
+System.Console.WriteLine($"{b1}, {k1}, {b2}, {k2}");
+double x = (b2 - b1) / (k1 - k2);
+double y = k2 * x + b2;
+System.Console.WriteLine($"точка пересечения двух прямых х = {x} и у = {y}");
 }
 
-int number = 3; 
-Count (ref number);
-System.Console.WriteLine(number);
+double  [] array = PromptArray("введите b1,k1,b2,k2:");
+LineCross (array);
