@@ -41,5 +41,25 @@ double y = k2 * x + b2;
 System.Console.WriteLine($"точка пересечения двух прямых х = {x} и у = {y}");
 }
 
+bool ValidateLines (double [] array)
+{
+  if (array [1] == array [3])
+    { 
+      if (array [0] == array [2])
+      {
+      System.Console.WriteLine("прямые совпадают");
+      return false;
+      }
+      else
+      {
+        System.Console.WriteLine("прямые параллельные");
+        return false;
+      }
+    }
+System.Console.WriteLine("прямые имеют точки пересечения");
+return true;
+}
+
 double  [] array = PromptArray("введите b1,k1,b2,k2:");
+ValidateLines (array);
 LineCross (array);
