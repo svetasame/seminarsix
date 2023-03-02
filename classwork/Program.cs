@@ -159,7 +159,20 @@ while (i + 3 < n)
 return array;
 }
 
-
 int n = Prompt("введите число");
-int [] array = FibonacciArr (n);
-PrintArray(array);
+// int [] array = FibonacciArr (n);
+// PrintArray(array);
+
+int a = 0;
+int b = 1;
+int c;
+System.Console.Write(a+ " " + b +" ");
+for (int i = 2; i < n; i++)
+{
+  c = a+b;
+  a = b;
+  b =c ;
+
+  System.Console.Write(c +" ");
+}
+System.Console.WriteLine();
