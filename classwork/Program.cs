@@ -11,6 +11,11 @@ int[] GenerateArray(int length)
 
 void PrintArray (int [] array)
 {
+  System.Console.WriteLine(String.Join(" ", array));
+}
+
+void PrintArrayString (string [] array)
+{
   System.Console.WriteLine(String.Join("", array));
 }
 
@@ -27,6 +32,16 @@ int [] ReverseArray (int [] array)
   for (int i = 0; i < array.Length/2; i++)
   {
     int tmp = array[i];
+    array[i] = array[array.Length-1-i];
+    array[array.Length-1-i] = tmp;
+  }
+  return array;
+}
+string [] ReverseArrayString (string [] array)
+{
+  for (int i = 0; i < array.Length/2; i++)
+  {
+    string tmp = array[i];
     array[i] = array[array.Length-1-i];
     array[array.Length-1-i] = tmp;
   }
@@ -107,4 +122,44 @@ while ( tmp > 0)
 System.Console.WriteLine(numbs);
 }
 
+int[] FillTenArray (int a, int length)
+{
+int tmp = a;
+int [] array = new int [length];
+for (int i = 0; i < length; i++)
+  {
+  array[length - 1 - i] = tmp % 2;
+  tmp = tmp / 2;
+  }
+  return array;
+}
+
 //сохранять каждую итерацию данные строки
+
+// int a = Prompt("введите число");
+// int length = TenToTwo(a);
+// System.Console.WriteLine();
+// PrintArray(FillTenArray(a, length));
+
+// задача 44 не используя рекурсию вывети первые n чисел фибоначии
+// начиная от 0 и 1 
+
+int[] FibonacciArr (int n)
+{
+int[] array = new int[n];
+int i = 0;
+array[i] = 0;
+array[i + 1] = 1;
+array[i + 2] = 1;
+while (i + 3 < n)
+{
+  array[i + 3] = array[i + 2] + array[i + 1];
+  i++;
+}
+return array;
+}
+
+
+int n = Prompt("введите число");
+int [] array = FibonacciArr (n);
+PrintArray(array);
