@@ -150,19 +150,16 @@ int[] array = new int[n];
 int i = 0;
 array[i] = 0;
 array[i + 1] = 1;
-array[i + 2] = 1;
-while (i + 3 < n)
+while (i + 2 < n)
 {
-  array[i + 3] = array[i + 2] + array[i + 1];
+  array[i + 2] = array[i + 1] + array[i];
   i++;
 }
 return array;
 }
 
-int n = Prompt("введите число");
-// int [] array = FibonacciArr (n);
-// PrintArray(array);
-
+void FibbGroup (int n)
+{
 int a = 0;
 int b = 1;
 int c;
@@ -171,8 +168,35 @@ for (int i = 2; i < n; i++)
 {
   c = a+b;
   a = b;
-  b =c ;
+  b = c;
 
   System.Console.Write(c +" ");
 }
 System.Console.WriteLine();
+}
+
+// int n = Prompt("введите число");
+// int [] array = FibonacciArr (n);
+// PrintArray(array);
+
+// FibbGroup (n);
+
+
+//задача 45 программа которая будет созлавать копию заданног омассива с помощью поэлементного копирования
+int[] CopyArray(int [] array)
+{
+  int [] array1 = new int [array.Length];
+  for (int i = 0; i <array.Length; i++)
+    {
+    array1 [i] = array [i] + 1; // единичку добавила чтобы проверить работает, это я 
+    //скопировала массив и добавила к каждому значению +1
+    }
+  return array1;
+}
+
+int length = Prompt("введите число");
+int[] array1 = GenerateArray(length);
+PrintArray(array1);
+int[] array2 = CopyArray (array1);
+PrintArray(array2);
+
